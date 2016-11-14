@@ -1,0 +1,27 @@
+/*ss重置样式  */
+body,div,i,a,p,span,b,input,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd,dt,textarea,img{margin:0;padding:0;}
+body{font-family: microsoft yahei;color:#333;}
+i,b{font-style: normal;}
+a{text-decoration:none;}
+img{vertical-align:top;width: 100%;}
+input,textarea,select,textarea,img{resize: none;outline: none;border: none;}
+li{list-style: none}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+.clearfix:after{content: '';display: block;height:0;clear: both;font-size:0;*zoom:1}
+
+
+#index{margin: 0;padding:0;}
+#index .header{position: relative;}
+#index .header a{display: block;position: absolute;right:0px;top:0px;}
+#index .header a img{width:65px;height:35px;}
+#index .contab{position:fixed;left:0;top:0;}
+#index #contab .tab{position: relative;font-size: 26px;text-align: center;}
+#index #contab .tab div{height:73px;}
+#index #contab .tab div a{display:block;height:100%;line-height:80px;}
+#index #contab .intaba{position:absolute;left:0;top:0;width:33.5%;}
+#index #contab .intaba a{margin-left:20%;}
+#index #contab .intabb{position:absolute;left:33.5%;top:0;width:31%;}
+#index #contab .intabc{position:absolute;right:0;top:0;width:32%;}
+#index #contab .intabc a{text-align: left;}
+#index .coffee ul li{float: left;width:50%;}
+
