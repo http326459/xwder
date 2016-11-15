@@ -20,30 +20,37 @@
 	   			//console.log(wor);
 	   			if(wor < 191){
 	   					$("#contab").css("position","relative");
-	   					$(".tab img").attr("src","images/baizi.jpg");
+	   					$(".imga").attr("display","none");
+						$(".img1").attr("display","block");
 	   				}else if(wor > 191){
 	   					$("#contab").css({"position":"fixed","left":0,"top":0});
-	   					$(".tab img").attr("src","images/huangzi2.jpg");
+	   					$(".imga").attr("display","none");
+						$(".img2").attr("display","block");
 	   					//$(".dessert").css("margin-top","73px");
 	   					//console.log(wor);
 
 		   					if(wor > 900){
-									$(".tab img").attr("src","images/huangzi3.jpg");
+									$(".imga").attr("display","none");
+									$(".img3").attr("display","block");
 				   					if(wor > 1400){
 				   						//console.log(wor);
-											$(".tab img").attr("src","images/huangzi4.jpg");
+											$(".imga").attr("display","none");
+											$(".img4").attr("display","block");
 					   				}
 		   					}
 	   				}
    			},10);
    			$(".intaba a").click(function(){
-   				$(".tab img").attr("src","images/huangzi2.jpg");
+				$(".imga").attr("display","none");
+				$(".img2").attr("display","block");
    			});
    			$(".intabb a").click(function(){
-   				$(".tab img").attr("src","images/huangzi3.jpg");
+   				$(".imga").attr("display","none");
+				$(".img3").attr("display","block");
    			});
    			$(".intabc a").click(function(){
-   				$(".tab img").attr("src","images/huangzi4.jpg");
+   				$(".imga").attr("display","none");
+				$(".img4").attr("display","block");
    			});
    				
    			
@@ -61,7 +68,11 @@
 			<a href="" class="share"><img src="images/sharea.png"/></a>
 		</div>
 		<div id="contab">
-			<div class="tab"><img src="images/baizi.jpg"/>
+			<div class="tab">
+				<img src="images/baizi.jpg" class="img1 imga" />
+				<img src="images/huangzi2.jpg" style="display:none" class="img2 imga" />
+				<img src="images/huangzi3.jpg" style="display:none" class="img3 imga" />
+				<img src="images/huangzi4.jpg" style="display:none" class="img4 imga" />
 				<div class="intaba"><a href="#aaa"></a></div>
 				<div class="intabb"><a href="#bbb"></a></div>
 				<div class="intabc"><a href="#ccc"></a></div>
