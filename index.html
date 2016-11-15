@@ -7,34 +7,34 @@
     <title>探味之旅</title>
     <link href="css/style.css" rel="stylesheet">
     <script src="js/jquery-3.1.0.min.js"></script>
-    <script type="text/javascript">
+     <script type="text/javascript">
     	
    		document.addEventListener('plusready', function(){
    			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
-   			
+   		
    		});
+   		
    		$(function(){
-			$(document).ready(function () { //本人习惯这样写了
+   			
+   			$(document).ready(function () { //本人习惯这样写了
 				    $(window).scroll(function () {
 				        var wortop = $(window).scrollTop();//这个方法是当前滚动条滚动的距离
 				        //$(window).height()获取当前窗体的高度
 				        //$(document).height()获取当前文档的高度
 				       if(wortop < 191){
 	   					$("#contab").css("position","relative");
-						$("#tab img").attr("src","images/baizi.jpg");
+	   					$(".tab img").attr("src","images/baizi.jpg");
 	   				}else if(wortop > 191){
 	   					$("#contab").css({"position":"fixed","left":0,"top":0});
-	   					//$(".dessert").css("margin-top","73px");
-	   					//console.log(wor);
-	   					$("#tab img").attr("src","images/huangzi2.jpg");
+	   					$(".tab img").attr("src","images/huangzi2.jpg");
 		   					if(wortop > 900){
-		   					$("#tab img").attr("src","images/huangzi3.jpg");
+		   						$(".tab img").attr("src","images/huangzi3.jpg");
 				   					if(wortop > 1400){
-				   					$("#tab img").attr("src","images/huangzi4.jpg");
+				   						$(".tab img").attr("src","images/huangzi4.jpg");
 					   				}
 		   					}
 	   				}
-				    });		
+				    });
 				});
    		});
     </script>
