@@ -26,7 +26,7 @@
 	   					$("#contab").css("position","relative");
 	   					$(".tab img").attr("src","images/baizi.jpg");
 	   				}else if(wortop > 198){
-	   					$("#contab").css({"position":"fixed","left":0,"top":0});
+	   					$("#contab").css({"position":"fixed","left":0,"top":0,"z-index":10});
 	   					$(".tab img").attr("src","images/huangzi2.jpg");
 		   					if(wortop > 900){
 		   						$(".tab img").attr("src","images/huangzi3.jpg");
@@ -38,7 +38,7 @@
 				    });
 				});
 			$(".intaba a").click(function(){
-				$("#contab").css({"position":"fixed","left":0,"top":0});
+				$("#contab").css({"position":"fixed","left":0,"top":0,"z-index":10});
 				$(".tab img").attr("src","images/huangzi2.jpg");
 			});
 			$(".intabb a").click(function(){
