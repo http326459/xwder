@@ -22,10 +22,10 @@
 				        //$(window).height()获取当前窗体的高度
 				        //$(document).height()获取当前文档的高度
 					    console.log(wortop);
-				       if(wortop < 185){
+				       if(wortop < 191){
 	   					$("#contab").css("position","relative");
 	   					$(".tab img").attr("src","images/baizi.jpg");
-	   				}else if(wortop > 198){
+	   				}else if(wortop > 191){
 	   					$("#contab").css({"position":"fixed","left":0,"top":0,"z-index":10});
 	   					$(".tab img").attr("src","images/huangzi2.jpg");
 		   					if(wortop > 900){
@@ -42,9 +42,11 @@
 				$(".tab img").attr("src","images/huangzi2.jpg");
 			});
 			$(".intabb a").click(function(){
+				$(window).scrollTop(991);
 				$(".tab img").attr("src","images/huangzi3.jpg");
 			});
 			$(".intabc a").click(function(){
+				$(window).scrollTop(1500);
 				$(".tab img").attr("src","images/huangzi4.jpg");
 			});
    		});
@@ -71,7 +73,6 @@
 				<li><a href="http://218.206.27.198:18087/wcs/service/charm/showMaterial?matId=a745907c-caaa-44d4-b33a-db84cb3410e0&matName=重庆的甜蜜滋味-26度"><img src="images/nanna_02.jpg"/> </a></li>
 			</ul>			
 		</div>
-		<a name="#bbb" id="bbb"></a>		
 		<div class="coffee">
 			<div class="cotab"><img src="images/coffee_02.jpg"/></div>
 			<ul class="clearfix">
@@ -83,7 +84,6 @@
 		</div>
 		
 		<div class="restaurant">
-			<a name="#ccc" id="ccc"></a>
 			<div class="retab"><img src="images/restaurant_02.jpg"/></div>
 			
 			<ul class="clearfix">
